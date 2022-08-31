@@ -38,7 +38,7 @@ After making musdb-XL only on mixtures, then we made the musdb-XL's stems. As yo
 
 
 # How to use musdb-XL for the evaluation
-First, download the sample-wise (element-wise) ratio between musdb-XL (or L) and musdb-hq files from Zenodo. 
+First, download the sample-wise (element-wise) ratio between musdb-XL (or L) and musdb-hq files from Zenodo. (Sorry, Zenodo upload is in progress)  
 
 Then, run the make_musdb_L_and_XL.py from this reposiroty. 
 
