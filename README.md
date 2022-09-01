@@ -38,9 +38,11 @@ After making musdb-XL only on mixtures, then we made the musdb-XL's stems. As yo
 
 
 # How to use musdb-XL for the evaluation
-First, download the sample-wise (element-wise) ratio between musdb-XL (or L) and musdb-hq files from Zenodo. (Sorry, Zenodo upload is in progress)  
+First, download the sample-wise (element-wise) ratio between musdb-XL (or L) and musdb-hq files from Zenodo. If you want to reproduce our experiments, download both musdb-L and musdb-XL ratio data. But if you just want to use the data as a benchmark for robust music source separation application, we recommend you to use just musdb-XL only because musdb-XL has more similar characteristics and loudness to real world commercial music. Musdb-L was originally made in an experimental reason, to check the tendency between the model performance and overall loudness.
 
-Then, run the make_musdb_L_and_XL.py from this reposiroty. 
+[Download page](https://zenodo.org/record/6992745#.YxCz_y_kFqs)
+
+Then, unzip the files, run the make_musdb_L_and_XL.py from this reposiroty. 
 
 Note that path --L_XL_ratio_root argument should contain unzipped ratio folder like below.
 
@@ -49,7 +51,7 @@ Note that path --L_XL_ratio_root argument should contain unzipped ratio folder l
 ```
 python make_L_and_XL.py \
   --save_dir=/where/to/save/musdb_XL \
-  --musdb_hq_root=/path/where/original/musdb-hq \
+  --musdb_hq_root=/path/where/original/musdb-hq (of course, musdb-hq must be downloaded. check [this page](https://sigsep.github.io/datasets/musdb.html))\
   --L_XL_ratio_root=/where/downloaded/data/is \
   --only_XL=True (use True if you want to make only musdb-XL, default is False (both musdb-L and XL will be made))
 ```
