@@ -40,7 +40,7 @@ After making musdb-XL only on mixtures, then we made the musdb-XL's stems. As yo
 # How to use musdb-XL for the evaluation
 First, download the sample-wise (element-wise) ratio between musdb-XL (or L) and musdb-hq files from Zenodo. If you want to reproduce our experiments, download both musdb-L and musdb-XL ratio data. But if you just want to use the data as a benchmark for robust music source separation application, we recommend you to use just musdb-XL only because musdb-XL has more similar characteristics and loudness to real world commercial music. Musdb-L was originally made in an experimental reason, to check the tendency between the model performance and overall loudness.
 
-[Download page](https://zenodo.org/record/6992745#.YxCz_y_kFqs)
+[Download page](https://zenodo.org/record/7041331#.Yxhpai_kFqs)
 
 Then, unzip the files, run the make_musdb_L_and_XL.py from this reposiroty. 
 
